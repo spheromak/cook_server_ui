@@ -1,0 +1,15 @@
+
+<h1><%= @cookbook %> Status</h1>
+                                                                                        
+<div class="in">                                                                                          
+<table width="850" border="0" cellspacing="0" cellpadding="10" class="table_main">
+  <tr style="background-color:#d9d8d8; font-size:14px;">
+    <% @servers.each do |server, data| %>
+      <td width="179"><strong><%= server %></strong></td>
+    <% end %>
+  </tr>
+<% servers.each do |server, data| %>
+  <tr><td>
+    <a href="/servers/<%= server %>"><%=server%></a><BR>
+  </tr></td>
+<% end %>
